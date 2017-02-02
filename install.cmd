@@ -11,7 +11,7 @@ rem installing nodemon to auto-reload the server on code change
 call npm install nodemon -g
 nodemon ./bin/www
 
-::installing process manager (strongloop, pm2 or forever)
+rem installing process manager (strongloop, pm2 or forever)
 ::call npm install strongloop -g
 ::call npm install pm2 -g
 ::call npm install forever -g
