@@ -5,11 +5,11 @@ cd %APP_NAME%
 call npm install
 
 rem start the app natively (without process manager)
-call set DEBUG=%APP_NAME%:* & npm start
+::call set DEBUG=%APP_NAME%:* & npm start
 
 rem installing nodemon to auto-reload the server on code change
-::call npm install nodemon -g
-::nodemon app.js
+call npm install nodemon -g
+nodemon ./bin/www
 
 ::installing process manager (strongloop, pm2 or forever)
 ::call npm install strongloop -g
